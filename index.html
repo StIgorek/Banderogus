@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="/src/images/gus-anim.gif" as="image" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
@@ -27,7 +28,9 @@
             подвигами, бороню Батьківщину та підтримую позитивний дух народу.
             Слава Україні!
           </p>
-          <button type="button" class="btn">Запустити гуся</button>
+          <button type="button" class="btn" id="go-to-form-btn">
+            Запустити гуся
+          </button>
         </div>
         <div>
           <img src="/src/images/gus.svg" alt="Banderagus" />
@@ -72,24 +75,26 @@
     </section>
 
     <section class="form-container">
-      <form action="#" class="form">
+      <form action="#" class="form" id="form">
         <img src="/src/images/trezub.svg" alt="trezub" />
         <h3 class="form-title">Поділися, будь ласка, поштою</h3>
         <p class="item-descr">та запиши гуся до бандерозагону</p>
         <div class="form-field">
-          <label for="userName" class="field-label">Ім'я</label>
-          <input type="text" id="userName" class="input" />
+          <label for="user-name" class="field-label">Ім'я</label>
+          <input type="text" id="user-name" class="input" />
         </div>
         <div class="form-field">
-          <label for="userEmail" class="field-label">Email</label>
+          <label for="user-email" class="field-label">Email</label>
           <input
             type="email"
-            id="userEmail"
+            id="user-email"
             class="input"
             placeholder="example@gmail.com"
           />
         </div>
-        <button type="submit" class="btn form-btn">Запустити гуся</button>
+        <button type="submit" class="btn form-btn" id="launch-btn">
+          Запустити гуся
+        </button>
       </form>
     </section>
 

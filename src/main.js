@@ -30,7 +30,7 @@ function addGooseElement() {
 function showGooseAnim() {
   const gooseEl = document.querySelector('.gus-anim');
 
-  gooseEl.setAttribute('src', '/src/images/gus-anim.gif');
+  gooseEl.setAttribute('src', './img/gus-anim.gif');
 
 
   setTimeout(() => {
@@ -48,8 +48,8 @@ form.addEventListener('submit', e => {
     return;
   }
 
-  console.log('Імʼя користувача: ', userNameField.value);
-  console.log('Email користувача: ', userEmailField.value);
+  console.log('Імʼя користувача: ', userEmailField.value);
+  console.log('Email користувача: ', userNameField.value);
 
   launchBtn.setAttribute('disabled', true);
   launchBtn.style.opacity = '0.7';

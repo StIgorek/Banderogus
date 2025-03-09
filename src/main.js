@@ -54,9 +54,14 @@ form.addEventListener('submit', e => {
   launchBtn.setAttribute('disabled', true);
   launchBtn.style.opacity = '0.7';
 
-  showGooseAnim();
+
 
   setTimeout(() => {
     launchBtn.style.opacity = '1';
   }, 4000)
+
+  showGooseAnim();
+
+  clearFormFields();
 })
+
